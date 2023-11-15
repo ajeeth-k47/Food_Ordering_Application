@@ -8,7 +8,13 @@ const requestConfig = {};
 
 export default function Meals(){
    
-    const {data:loadedMeals,isLoading,error}= useHttp("http://localhost:3000/meals",requestConfig,[]);
+    // for  Local deployment
+    //const {data:loadedMeals,isLoading,error}= useHttp("http://localhost:3000/meals",requestConfig,[]);
+
+    // for production
+    const {data:loadedMeals,isLoading,error}= useHttp("https://online-food-service.onrender.com/meals",requestConfig,[]);
+
+   
     if(isLoading){
         return <p className='center'>Fetching Meals...</p>
     }
