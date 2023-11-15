@@ -5,7 +5,7 @@ import CartContext from "../store/CartContext";
 import UserProgressContext  from "../store/UserProgressContext";
 import Input from "./UI/Input";
 import { currencyFormatter } from "../Util/Formater";
-import Button from "./UI/BUtton";
+import Button from "./UI/Button";
 import useHttp from "../hooks/useHttp";
 import Error from "./Error";
 
